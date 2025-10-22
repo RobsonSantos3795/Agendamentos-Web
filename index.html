@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Agendamento de Serviço - Cliente</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Realize seus agendamentos</h1>
+        <form id="agendamentoForm">
+            <label for="dia">Dia de Agendamento:</label>
+            <input type="date" id="dia" name="dia">
+
+            <label for="nome">Nome do Cliente:</label>
+            <input type="text" id="nome" name="nome">
+
+            <label for="servico">Tipo do Serviço:</label>
+            <input type="text" id="servico" name="servico">
+
+            <label for="valor">Valor do Serviço:</label>
+            <input type="number" id="valor" name="valor" step="0.01">
+
+            <label for="telefone">Telefone para Contato:</label>
+            <input type="tel" id="telefone" name="telefone">
+
+            <button type="submit">Agendar</button>
+        </form>
+        <p id="mensagem"></p>
+        <p class="admin-link"><a href="login.html">Acesso Administrativo</a></p>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-database-compat.js"></script>
+    
+    <script src="app.js"></script>
+</body>
+</html>

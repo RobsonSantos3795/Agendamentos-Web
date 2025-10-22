@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin - Agendamentos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Painel Administrativo</h1>
+            <button id="logoutBtn">Sair</button>
+        </header>
+        
+        <h2>Agendamentos Cadastrados</h2>
+        <table id="agendamentosTable">
+            <thead>
+                <tr>
+                    <th>Dia</th>
+                    <th>Nome</th>
+                    <th>Serviço</th>
+                    <th>Valor</th>
+                    <th>Telefone</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                </tbody>
+        </table>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-database-compat.js"></script>
+    
+    <script src="admin.js"></script>
+</body>
+</html>

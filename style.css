@@ -1,0 +1,111 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.container {
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #007bff;
+}
+
+form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+form input, form button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+form button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+#mensagem, #loginMessage {
+    text-align: center;
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.admin-link {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Estilos para a Tabela de Admin */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#agendamentosTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+#agendamentosTable th, #agendamentosTable td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+    font-size: 0.9em;
+}
+
+#agendamentosTable th {
+    background-color: #007bff;
+    color: white;
+}
+
+#agendamentosTable tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#agendamentosTable button {
+    padding: 5px 10px;
+    margin-right: 5px;
+    cursor: pointer;
+    border: none;
+    border-radius: 3px;
+    font-size: 0.8em;
+}
+
+#agendamentosTable button:first-of-type {
+    background-color: #ffc107; /* Amarelo - Editar */
+    color: #333;
+}
+
+#agendamentosTable .delete-btn {
+    background-color: #dc3545; /* Vermelho - Apagar */
+    color: white;
+}
